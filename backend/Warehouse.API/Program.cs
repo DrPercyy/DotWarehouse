@@ -2,6 +2,9 @@ using Microsoft.EntityFrameworkCore;
 using Warehouse.Infra;
 using Warehouse.Infra.Data;
 using Warehouse.API.Filters;
+using Warehouse.Infra.Inventory.Repositories;
+using Warehouse.Infra.Inventory.Services;
+using Warehouse.Infra.Inventory.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,6 +29,9 @@ builder.Services.AddControllers();
 
 // Aqui você poderia registrar serviços do módulo Inventory
 
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IProductService, ProductService>();
+
 
 var app = builder.Build();
 
@@ -39,6 +45,7 @@ app.UseSwaggerUI(c =>
 
 // Mapear controllers normalmente
 app.MapControllers();
+
 
 // Opcional: impedir que controllers do Inventory respondam se feature desativada
 if (!inventoryEnabled)

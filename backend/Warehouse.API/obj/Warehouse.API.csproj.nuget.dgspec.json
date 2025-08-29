@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/julio/projetos/DotWarehouse/backend/Warehouse.API/Warehouse.API.csproj": {}
+    "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.API/Warehouse.API.csproj": {}
   },
   "projects": {
-    "/home/julio/projetos/DotWarehouse/backend/Warehouse.API/Warehouse.API.csproj": {
+    "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.API/Warehouse.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/julio/projetos/DotWarehouse/backend/Warehouse.API/Warehouse.API.csproj",
+        "projectUniqueName": "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.API/Warehouse.API.csproj",
         "projectName": "Warehouse.API",
-        "projectPath": "/home/julio/projetos/DotWarehouse/backend/Warehouse.API/Warehouse.API.csproj",
-        "packagesPath": "/home/julio/.nuget/packages/",
-        "outputPath": "/home/julio/projetos/DotWarehouse/backend/Warehouse.API/obj/",
+        "projectPath": "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.API/Warehouse.API.csproj",
+        "packagesPath": "/home/jlima/.nuget/packages/",
+        "outputPath": "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/julio/.nuget/NuGet/NuGet.Config"
+          "/home/jlima/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/julio/projetos/DotWarehouse/backend/Warehouse.Infra/Warehouse.Infra.csproj": {
-                "projectPath": "/home/julio/projetos/DotWarehouse/backend/Warehouse.Infra/Warehouse.Infra.csproj"
+              "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Infra/Warehouse.Infra.csproj": {
+                "projectPath": "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Infra/Warehouse.Infra.csproj"
               }
             }
           }
@@ -36,6 +36,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -88,21 +93,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.119/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/jlima/.dotnet/sdk/8.0.413/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/julio/projetos/DotWarehouse/backend/Warehouse.Core/Warehouse.Core.csproj": {
+    "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/Warehouse.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/julio/projetos/DotWarehouse/backend/Warehouse.Core/Warehouse.Core.csproj",
+        "projectUniqueName": "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/Warehouse.Core.csproj",
         "projectName": "Warehouse.Core",
-        "projectPath": "/home/julio/projetos/DotWarehouse/backend/Warehouse.Core/Warehouse.Core.csproj",
-        "packagesPath": "/home/julio/.nuget/packages/",
-        "outputPath": "/home/julio/projetos/DotWarehouse/backend/Warehouse.Core/obj/",
+        "projectPath": "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/Warehouse.Core.csproj",
+        "packagesPath": "/home/jlima/.nuget/packages/",
+        "outputPath": "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/julio/.nuget/NuGet/NuGet.Config"
+          "/home/jlima/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -120,6 +125,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -141,21 +151,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.119/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/jlima/.dotnet/sdk/8.0.413/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/julio/projetos/DotWarehouse/backend/Warehouse.Infra/Warehouse.Infra.csproj": {
+    "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Infra/Warehouse.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/julio/projetos/DotWarehouse/backend/Warehouse.Infra/Warehouse.Infra.csproj",
+        "projectUniqueName": "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Infra/Warehouse.Infra.csproj",
         "projectName": "Warehouse.Infra",
-        "projectPath": "/home/julio/projetos/DotWarehouse/backend/Warehouse.Infra/Warehouse.Infra.csproj",
-        "packagesPath": "/home/julio/.nuget/packages/",
-        "outputPath": "/home/julio/projetos/DotWarehouse/backend/Warehouse.Infra/obj/",
+        "projectPath": "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Infra/Warehouse.Infra.csproj",
+        "packagesPath": "/home/jlima/.nuget/packages/",
+        "outputPath": "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Infra/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/julio/.nuget/NuGet/NuGet.Config"
+          "/home/jlima/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -167,8 +177,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/julio/projetos/DotWarehouse/backend/Warehouse.Core/Warehouse.Core.csproj": {
-                "projectPath": "/home/julio/projetos/DotWarehouse/backend/Warehouse.Core/Warehouse.Core.csproj"
+              "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/Warehouse.Core.csproj": {
+                "projectPath": "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/Warehouse.Core.csproj"
               }
             }
           }
@@ -177,6 +187,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -222,7 +237,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.119/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/jlima/.dotnet/sdk/8.0.413/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

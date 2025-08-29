@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/home/julio/.nuget/packages/": {}
+    "/home/jlima/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/julio/projetos/DotWarehouse/backend/Warehouse.Core/Warehouse.Core.csproj",
+      "projectUniqueName": "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/Warehouse.Core.csproj",
       "projectName": "Warehouse.Core",
-      "projectPath": "/home/julio/projetos/DotWarehouse/backend/Warehouse.Core/Warehouse.Core.csproj",
-      "packagesPath": "/home/julio/.nuget/packages/",
-      "outputPath": "/home/julio/projetos/DotWarehouse/backend/Warehouse.Core/obj/",
+      "projectPath": "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/Warehouse.Core.csproj",
+      "packagesPath": "/home/jlima/.nuget/packages/",
+      "outputPath": "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/julio/.nuget/NuGet/NuGet.Config"
+        "/home/jlima/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -38,6 +38,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -59,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.119/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/jlima/.dotnet/sdk/8.0.413/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

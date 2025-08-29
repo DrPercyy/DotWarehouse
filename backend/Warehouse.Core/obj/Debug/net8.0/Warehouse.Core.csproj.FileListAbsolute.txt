@@ -9,3 +9,15 @@
 /home/julio/projetos/DotWarehouse/backend/Warehouse.Core/obj/Debug/net8.0/refint/Warehouse.Core.dll
 /home/julio/projetos/DotWarehouse/backend/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.pdb
 /home/julio/projetos/DotWarehouse/backend/Warehouse.Core/obj/Debug/net8.0/ref/Warehouse.Core.dll
+/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.GeneratedMSBuildEditorConfig.editorconfig
+/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.AssemblyInfoInputs.cache
+/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.AssemblyInfo.cs
+/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.csproj.CoreCompileInputs.cache
+/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.sourcelink.json
+/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.dll
+/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/obj/Debug/net8.0/refint/Warehouse.Core.dll
+/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.pdb
+/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/bin/Debug/net8.0/Warehouse.Core.deps.json
+/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/bin/Debug/net8.0/Warehouse.Core.dll
+/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/bin/Debug/net8.0/Warehouse.Core.pdb
+/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/obj/Debug/net8.0/ref/Warehouse.Core.dll

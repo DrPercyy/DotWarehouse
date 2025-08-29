@@ -1,17 +1,18 @@
 using Microsoft.AspNetCore.Mvc;
 using Warehouse.API.Filters;
+using Warehouse.Infra.Inventory.Services.Interfaces;
 
 namespace Warehouse.API.Controllers.Inventory
 {
     [ApiController]
     [Route("inventory/[controller]")]
     [ModuleFeature("Inventory")] // <- aqui passa o nome da feature
-    public class ProductController : ControllerBase
+    public class ProductController(IProductService _productService) : ControllerBase
     {
         [HttpGet]
-        public IActionResult GetProducts()
+        public async Task<IActionResult >  GetById(int id)
         {
-            return Ok(new[] { "Produto 1", "Labubu 2" });
+            return Ok(await _productService.GetByIdAsync(id));
         }
     }
 }

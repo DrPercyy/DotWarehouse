@@ -980,7 +980,10 @@
       },
       "Warehouse.Core/1.0.0": {
         "runtime": {
-          "Warehouse.Core.dll": {}
+          "Warehouse.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Warehouse.Infra/1.0.0": {
@@ -992,7 +995,10 @@
           "Warehouse.Core": "1.0.0"
         },
         "runtime": {
-          "Warehouse.Infra.dll": {}
+          "Warehouse.Infra.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

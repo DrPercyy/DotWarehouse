@@ -947,7 +947,10 @@
       },
       "Warehouse.Core/1.0.0": {
         "runtime": {
-          "Warehouse.Core.dll": {}
+          "Warehouse.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

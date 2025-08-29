@@ -8,37 +8,144 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4afab1d2-14bf-4114-84c6-7b6ba929db88" name="Changes" comment="" />
+    <list default="true" id="4afab1d2-14bf-4114-84c6-7b6ba929db88" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Warehouse.Core/Inventory/Interfaces/Services/IBaseServices.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Warehouse.Core/Inventory/Interfaces/Services/IProductService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Warehouse.Infra/Inventory/Repositories/ProductRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Warehouse.Infra/Inventory/Services/ProductService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DotWarehouse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DotWarehouse/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/Controllers/Inventory/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/Controllers/Inventory/ProductController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/bin/Debug/net8.0/Warehouse.API" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/bin/Debug/net8.0/Warehouse.API" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/bin/Debug/net8.0/Warehouse.API.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/bin/Debug/net8.0/Warehouse.API.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/bin/Debug/net8.0/Warehouse.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/bin/Debug/net8.0/Warehouse.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/bin/Debug/net8.0/Warehouse.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/bin/Debug/net8.0/Warehouse.API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/bin/Debug/net8.0/Warehouse.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/bin/Debug/net8.0/Warehouse.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/bin/Debug/net8.0/Warehouse.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/bin/Debug/net8.0/Warehouse.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/bin/Debug/net8.0/Warehouse.Infra.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/bin/Debug/net8.0/Warehouse.Infra.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/bin/Debug/net8.0/Warehouse.Infra.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/bin/Debug/net8.0/Warehouse.Infra.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/bin/Debug/net8.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/bin/Debug/net8.0/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/obj/Debug/net8.0/Warehouse.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/obj/Debug/net8.0/Warehouse.API.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/obj/Debug/net8.0/Warehouse.API.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/obj/Debug/net8.0/Warehouse.API.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/obj/Debug/net8.0/Warehouse.API.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/obj/Debug/net8.0/Warehouse.API.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/obj/Debug/net8.0/Warehouse.API.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/obj/Debug/net8.0/Warehouse.API.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/obj/Debug/net8.0/Warehouse.API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/obj/Debug/net8.0/Warehouse.API.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/obj/Debug/net8.0/Warehouse.API.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/obj/Debug/net8.0/Warehouse.API.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/obj/Debug/net8.0/Warehouse.API.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/obj/Debug/net8.0/Warehouse.API.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/obj/Debug/net8.0/Warehouse.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/obj/Debug/net8.0/Warehouse.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/obj/Debug/net8.0/Warehouse.API.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/obj/Debug/net8.0/Warehouse.API.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/obj/Debug/net8.0/Warehouse.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/obj/Debug/net8.0/Warehouse.API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/obj/Debug/net8.0/apphost" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/obj/Debug/net8.0/apphost" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/obj/Debug/net8.0/ref/Warehouse.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/obj/Debug/net8.0/ref/Warehouse.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/obj/Debug/net8.0/refint/Warehouse.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/obj/Debug/net8.0/refint/Warehouse.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/obj/Warehouse.API.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/obj/Warehouse.API.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/obj/Warehouse.API.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/obj/Warehouse.API.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.API/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/Inventory/Interfaces/IBaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Core/Inventory/Interfaces/Repositories/IBaseRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/Inventory/Interfaces/ICategoryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Core/Inventory/Interfaces/Repositories/ICategoryRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/Inventory/Interfaces/IMovementRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Core/Inventory/Interfaces/Repositories/IMovementRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/Inventory/Interfaces/IProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Core/Inventory/Interfaces/Repositories/IProductRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/Inventory/Interfaces/IProductSuplierRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Core/Inventory/Interfaces/Repositories/IProductSuplierRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/Inventory/Interfaces/ISuplierRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Core/Inventory/Interfaces/Repositories/ISuplierRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/Inventory/Interfaces/UnitRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Core/Inventory/Interfaces/Repositories/UnitRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/Inventory/Repositories/ProductRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/Warehouse.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Core/Warehouse.Core.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/bin/Debug/net8.0/Warehouse.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Core/bin/Debug/net8.0/Warehouse.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/bin/Debug/net8.0/Warehouse.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Core/bin/Debug/net8.0/Warehouse.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/obj/Debug/net8.0/ref/Warehouse.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Core/obj/Debug/net8.0/ref/Warehouse.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/obj/Debug/net8.0/refint/Warehouse.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Core/obj/Debug/net8.0/refint/Warehouse.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/obj/Warehouse.Core.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Core/obj/Warehouse.Core.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/obj/Warehouse.Core.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Core/obj/Warehouse.Core.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Core/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Core/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Core/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Core/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Core/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Core/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Infra/Warehouse.Infra.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Infra/Warehouse.Infra.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Infra/bin/Debug/net8.0/Warehouse.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Infra/bin/Debug/net8.0/Warehouse.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Infra/bin/Debug/net8.0/Warehouse.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Infra/bin/Debug/net8.0/Warehouse.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Infra/bin/Debug/net8.0/Warehouse.Infra.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Infra/bin/Debug/net8.0/Warehouse.Infra.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Infra/bin/Debug/net8.0/Warehouse.Infra.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Infra/bin/Debug/net8.0/Warehouse.Infra.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Infra/bin/Debug/net8.0/Warehouse.Infra.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Infra/bin/Debug/net8.0/Warehouse.Infra.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Infra/obj/Debug/net8.0/ref/Warehouse.Infra.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Infra/obj/Debug/net8.0/ref/Warehouse.Infra.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Infra/obj/Debug/net8.0/refint/Warehouse.Infra.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Infra/obj/Debug/net8.0/refint/Warehouse.Infra.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Infra/obj/Warehouse.Infra.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Infra/obj/Warehouse.Infra.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Infra/obj/Warehouse.Infra.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Infra/obj/Warehouse.Infra.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Infra/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Infra/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Infra/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Infra/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Infra/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Infra/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Infra/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Infra/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse.Infra/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse.Infra/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Warehouse.Core/Inventory/Repositories/ProductRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/595e4f2361fd31cb66c7e9303f46cf8f2fe77d96eea9d0e42c17cae783aa74/ServiceCollection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Warehouse.Infra/Inventory/Repositories/ProductRepository.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="31wEMutl3c4xbhzH0ho3m8HsPBK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    ".NET Launch Settings Profile.Warehouse.API: http.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
@@ -96,7 +203,6 @@
       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
       <option name="SEND_DEBUG_REQUEST" value="1" />
       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <option name="AUTO_ATTACH_CHILDREN" value="0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -112,7 +218,6 @@
       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
       <option name="SEND_DEBUG_REQUEST" value="1" />
       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <option name="AUTO_ATTACH_CHILDREN" value="0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -126,12 +231,14 @@
       <option name="presentableId" value="Default" />
       <updated>1756426693539</updated>
       <workItem from="1756426701804" duration="1722000" />
+      <workItem from="1756429311892" duration="3745000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
