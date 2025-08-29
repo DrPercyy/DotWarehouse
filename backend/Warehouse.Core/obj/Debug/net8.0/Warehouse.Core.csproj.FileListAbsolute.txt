@@ -1,0 +1,11 @@
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Core/bin/Debug/net8.0/Warehouse.Core.deps.json
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Core/bin/Debug/net8.0/Warehouse.Core.dll
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Core/bin/Debug/net8.0/Warehouse.Core.pdb
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.AssemblyInfoInputs.cache
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.AssemblyInfo.cs
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.csproj.CoreCompileInputs.cache
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.dll
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Core/obj/Debug/net8.0/refint/Warehouse.Core.dll
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Core/obj/Debug/net8.0/Warehouse.Core.pdb
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Core/obj/Debug/net8.0/ref/Warehouse.Core.dll

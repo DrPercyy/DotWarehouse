@@ -1,0 +1,17 @@
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Infra/bin/Debug/net8.0/Warehouse.Infra.deps.json
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Infra/bin/Debug/net8.0/Warehouse.Infra.runtimeconfig.json
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Infra/bin/Debug/net8.0/Warehouse.Infra.dll
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Infra/bin/Debug/net8.0/Warehouse.Infra.pdb
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Infra/bin/Debug/net8.0/Warehouse.Core.dll
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Infra/bin/Debug/net8.0/Warehouse.Core.pdb
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.csproj.AssemblyReference.cache
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.GeneratedMSBuildEditorConfig.editorconfig
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.AssemblyInfoInputs.cache
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.AssemblyInfo.cs
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.csproj.CoreCompileInputs.cache
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.csproj.CopyComplete
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.dll
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Infra/obj/Debug/net8.0/refint/Warehouse.Infra.dll
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.pdb
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Infra/obj/Debug/net8.0/Warehouse.Infra.genruntimeconfig.cache
+/home/julio/projetos/DotWarehouse/backend/Warehouse.Infra/obj/Debug/net8.0/ref/Warehouse.Infra.dll
