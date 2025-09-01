@@ -1,3 +1,5 @@
+//file: backend/Warehouse.Core/Inventory/Interfaces/Services/IProductService.cs
+
 using Warehouse.Core.Entities;
 
 namespace Warehouse.Infra.Inventory.Services.Interfaces;

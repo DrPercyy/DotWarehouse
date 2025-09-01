@@ -1,3 +1,5 @@
+//file: backend/Warehouse.Core/Inventory/DTOs/CategoryDto.cs
+
 namespace Warehouse.Core.DTOs
 {
     public class CategoryDto

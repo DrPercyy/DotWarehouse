@@ -1,3 +1,5 @@
+//file: backend/Warehouse.Infra/Data/WarehouseDbContext.cs
+
 using Microsoft.EntityFrameworkCore;
 using Warehouse.Core.Entities;
 

@@ -1,3 +1,5 @@
+//file: backend/Warehouse.API/Filters/ModuleFeatureFilter.cs
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 

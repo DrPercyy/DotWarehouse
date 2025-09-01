@@ -1,3 +1,5 @@
+//file: backend/Warehouse.Core/Inventory/Entities/Supplier.cs
+
 namespace Warehouse.Core.Entities
 {
     public class Supplier

@@ -1,0 +1,1 @@
+// file: backend/Warehouse.Core/Inventory/DTOs/SupplierDto.cs

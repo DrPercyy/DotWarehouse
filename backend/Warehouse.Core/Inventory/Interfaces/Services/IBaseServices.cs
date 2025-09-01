@@ -1,3 +1,5 @@
+//file: backend/Warehouse.Core/Inventory/Interfaces/Services/IBaseServices.cs
+
 namespace Warehouse.Infra.Inventory.Services.Interfaces;
 
 public interface IBaseServices<T> where T : class

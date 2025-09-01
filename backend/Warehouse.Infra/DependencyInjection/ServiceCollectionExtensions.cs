@@ -1,3 +1,5 @@
+//file: backend/Warehouse.Infra/DependencyInjection/ServiceCollectionExtensions.cs
+
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

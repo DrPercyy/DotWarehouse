@@ -1,3 +1,5 @@
+//file: backend/Warehouse.Core/Inventory/Entities/Movement.cs
+
 namespace Warehouse.Core.Entities
 {
     public class Movement

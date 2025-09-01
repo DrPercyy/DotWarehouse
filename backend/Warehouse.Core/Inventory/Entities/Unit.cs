@@ -1,3 +1,5 @@
+//file: backend/Warehouse.Core/Inventory/Entities/Unit.cs
+
 namespace Warehouse.Core.Entities
 {
     // Inventory Models/Entities

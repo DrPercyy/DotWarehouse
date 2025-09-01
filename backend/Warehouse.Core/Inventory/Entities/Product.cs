@@ -1,3 +1,5 @@
+//file: backend/Warehouse.Core/Inventory/Entities/Product.cs
+
 namespace Warehouse.Core.Entities
 {
     public class Product
@@ -21,5 +23,5 @@ namespace Warehouse.Core.Entities
         public ICollection<ProductSupplier> ProductSuppliers { get; set; } = new List<ProductSupplier>();
     }
 
-    
+
 }

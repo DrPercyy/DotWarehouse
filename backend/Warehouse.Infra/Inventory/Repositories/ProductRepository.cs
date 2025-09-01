@@ -1,3 +1,5 @@
+//file: backend/Warehouse.Infra/Inventory/Repositories/ProductRepository.cs
+
 using Microsoft.EntityFrameworkCore;
 using Warehouse.Core.Entities;
 using Warehouse.Infra.Data;

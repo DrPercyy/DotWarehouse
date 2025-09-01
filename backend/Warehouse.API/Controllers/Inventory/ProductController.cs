@@ -1,3 +1,5 @@
+//file: backend/Warehouse.API/Controllers/Inventory/ProductController.cs
+
 using Microsoft.AspNetCore.Mvc;
 using Warehouse.API.Filters;
 using Warehouse.Core.Entities;

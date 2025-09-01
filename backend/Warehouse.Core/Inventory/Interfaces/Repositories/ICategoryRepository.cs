@@ -1,3 +1,5 @@
+//file: backend/Warehouse.Core/Inventory/Interfaces/Repositories/ICategoryRepository.cs
+
 using Warehouse.Core.Entities;
 using Warehouse.Core.Interfaces;
 

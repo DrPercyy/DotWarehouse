@@ -1,3 +1,5 @@
+//file: backend/Warehouse.Core/Inventory/Interfaces/Repositories/IMovementRepository.cs
+
 using Warehouse.Core.Interfaces;
 using Warehouse.Core.Entities;
 
