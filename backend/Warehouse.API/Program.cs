@@ -2,7 +2,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using Warehouse.Infra;
-using Warehouse.Infra.Data;
+using Warehouse.Infra.Inventory.Data;
 using Warehouse.API.Filters;
 using Warehouse.Infra.Inventory.Repositories;
 using Warehouse.Infra.Inventory.Services;
@@ -12,7 +12,7 @@ using Warehouse.API.Middleware;
 var builder = WebApplication.CreateBuilder(args);
 
 // Conexão com MySQL usando Pomelo
-builder.Services.AddDbContext<WarehouseDbContext>(options =>
+builder.Services.AddDbContext<InventoryDbContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("WarehouseConnection"),
         new MySqlServerVersion(new Version(8, 0, 36))

@@ -5,13 +5,13 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Warehouse.Infra.Data;
+using Warehouse.Infra.Inventory.Data;
 
 #nullable disable
 
 namespace Warehouse.Infra.Migrations
 {
-    [DbContext(typeof(WarehouseDbContext))]
+    [DbContext(typeof(InventoryDbContext))]
     [Migration("20250829135522_InitialCreate")]
     partial class InitialCreate
     {

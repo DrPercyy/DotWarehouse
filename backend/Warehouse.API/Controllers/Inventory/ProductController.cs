@@ -31,7 +31,7 @@ namespace Warehouse.API.Controllers.Inventory
             return Ok(product);
         }
 
-        // GET: inventory/product
+        // GET: inventory/Allproducts
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {

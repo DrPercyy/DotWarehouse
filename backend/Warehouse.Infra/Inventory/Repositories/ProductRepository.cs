@@ -2,20 +2,21 @@
 
 using Microsoft.EntityFrameworkCore;
 using Warehouse.Core.Entities;
-using Warehouse.Infra.Data;
+using Warehouse.Core.Inventory.Exceptions;
+using Warehouse.Infra.Inventory.Data;
 namespace Warehouse.Infra.Inventory.Repositories;
 
 public class ProductRepository : IProductRepository
 {
-    private readonly WarehouseDbContext _dbContext;
+    private readonly InventoryDbContext _dbContext;
 
-    public ProductRepository(WarehouseDbContext dbContext)
+    public ProductRepository(InventoryDbContext dbContext)
     {
         _dbContext = dbContext;
     }
 
     public async Task<Product> GetByIdAsync(int id) 
-        => await _dbContext.Products.FirstOrDefaultAsync(x => x.Id == id); // sem "?? new()"
+        => await _dbContext.Products.FirstOrDefaultAsync(x => x.Id == id) ?? throw new NotFoundException($"Produto com ID {id} não encontrado."); // sem "?? new()"
 
     public async Task<IEnumerable<Product>> GetAllAsync() 
         => await _dbContext.Products.ToListAsync(); // lista vazia é OK, controller pode decidir
