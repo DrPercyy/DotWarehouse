@@ -52,3 +52,23 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# Logs da aplicação
+*.log
+logs/
+Logs/
+
+# Configurações locais (senhas, tokens, etc.)
+appsettings.Development.json
+appsettings.Local.json
+
+# IDEs (caso use JetBrains Rider, VSCode, etc.)
+.idea/
+.vscode/
+
+# Cache do usuário
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
