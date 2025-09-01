@@ -108,7 +108,7 @@ namespace Warehouse.Infra.Migrations
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<string>("Descryption")
+                    b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("longtext");
 

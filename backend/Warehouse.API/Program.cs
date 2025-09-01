@@ -5,6 +5,7 @@ using Warehouse.API.Filters;
 using Warehouse.Infra.Inventory.Repositories;
 using Warehouse.Infra.Inventory.Services;
 using Warehouse.Infra.Inventory.Services.Interfaces;
+using Warehouse.API.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,8 +33,9 @@ builder.Services.AddControllers();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IProductService, ProductService>();
 
-
 var app = builder.Build();
+
+app.UseMiddleware<ExceptionMiddleware>();
 
 // Pipeline HTTP
 app.UseSwagger();

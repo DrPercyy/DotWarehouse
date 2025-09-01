@@ -1,3 +1,5 @@
+/*
+
 using Microsoft.AspNetCore.Mvc;
 using Warehouse.API.Filters;
 using Warehouse.Core.Entities;
@@ -125,3 +127,6 @@ namespace Warehouse.API.Controllers.Inventory
         }
     }
 }
+
+
+*/

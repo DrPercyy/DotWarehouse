@@ -10,38 +10,38 @@ public class ProductService(IProductRepository _productRepository) : IProductSer
         return await _productRepository.GetByIdAsync(id); 
     }
 
-    public Task<IEnumerable<Product>> GetAllAsync()
+    public async Task<IEnumerable<Product>> GetAllAsync()
     {
-        throw new NotImplementedException();
+        return await _productRepository.GetAllAsync();
     }
 
-    public Task AddAsync(Product entity)
+    public async Task AddAsync(Product entity)
     {
-        throw new NotImplementedException();
+        await _productRepository.AddAsync(entity);
     }
 
-    public Task UpdateAsync(Product entity)
+    public async Task UpdateAsync(Product entity)
     {
-        throw new NotImplementedException();
+        await _productRepository.UpdateAsync(entity);
     }
 
-    public Task DeleteAsync(int id)
+    public async Task DeleteAsync(int id)
     {
-        throw new NotImplementedException();
+        await _productRepository.DeleteAsync(id);
     }
 
-    public Task<IEnumerable<Product>> GetProductsByCategoryIdAsync(int categoryId)
+    public async Task<IEnumerable<Product>> GetProductsByCategoryIdAsync(int categoryId)
     {
-        throw new NotImplementedException();
+        return await _productRepository.GetProductsByCategoryIdAsync(categoryId);
     }
 
-    public Task<IEnumerable<Product>> SearchProductsAsync(string searchTerm)
+    public async Task<IEnumerable<Product>> SearchProductsAsync(string searchTerm)
     {
-        throw new NotImplementedException();
+        return await _productRepository.SearchProductsAsync(searchTerm);
     }
 
-    public Task<IEnumerable<Movement>> GetProductMovementsAsync(int productId)
+    public async Task<IEnumerable<Movement>> GetProductMovementsAsync(int productId)
     {
-        throw new NotImplementedException();
+        return await _productRepository.GetProductMovementsAsync(productId);
     }
 }

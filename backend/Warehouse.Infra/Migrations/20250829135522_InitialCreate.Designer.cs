@@ -12,7 +12,7 @@ using Warehouse.Infra.Data;
 namespace Warehouse.Infra.Migrations
 {
     [DbContext(typeof(WarehouseDbContext))]
-    [Migration("20250828171230_InitialCreate")]
+    [Migration("20250829135522_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -111,7 +111,7 @@ namespace Warehouse.Infra.Migrations
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<string>("Descryption")
+                    b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("longtext");
 
