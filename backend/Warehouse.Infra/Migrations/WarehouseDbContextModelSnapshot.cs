@@ -102,9 +102,6 @@ namespace Warehouse.Infra.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("CategoryId1")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime(6)");
 
@@ -123,10 +120,10 @@ namespace Warehouse.Infra.Migrations
                     b.Property<int>("Price")
                         .HasColumnType("int");
 
-                    b.Property<int>("UnitId")
+                    b.Property<int>("Stock")
                         .HasColumnType("int");
 
-                    b.Property<int?>("UnitId1")
+                    b.Property<int>("UnitId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("UpdateDate")
@@ -136,11 +133,7 @@ namespace Warehouse.Infra.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.HasIndex("CategoryId1");
-
                     b.HasIndex("UnitId");
-
-                    b.HasIndex("UnitId1");
 
                     b.ToTable("products", (string)null);
                 });
@@ -259,7 +252,8 @@ namespace Warehouse.Infra.Migrations
                         .WithMany("Movements")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .IsRequired()
+                        .HasConstraintName("FK_Movement_Product");
 
                     b.Navigation("Product");
                 });
@@ -267,24 +261,18 @@ namespace Warehouse.Infra.Migrations
             modelBuilder.Entity("Warehouse.Core.Entities.Product", b =>
                 {
                     b.HasOne("Warehouse.Core.Entities.Category", "Category")
-                        .WithMany()
+                        .WithMany("Products")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("Warehouse.Core.Entities.Category", null)
-                        .WithMany("Products")
-                        .HasForeignKey("CategoryId1");
+                        .IsRequired()
+                        .HasConstraintName("FK_Product_Category");
 
                     b.HasOne("Warehouse.Core.Entities.Unit", "Unit")
-                        .WithMany()
+                        .WithMany("Products")
                         .HasForeignKey("UnitId")
                         .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("Warehouse.Core.Entities.Unit", null)
-                        .WithMany("Products")
-                        .HasForeignKey("UnitId1");
+                        .IsRequired()
+                        .HasConstraintName("FK_Product_Unit");
 
                     b.Navigation("Category");
 
@@ -297,13 +285,15 @@ namespace Warehouse.Infra.Migrations
                         .WithMany("ProductSuppliers")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .IsRequired()
+                        .HasConstraintName("FK_ProductSupplier_Product");
 
                     b.HasOne("Warehouse.Core.Entities.Supplier", "Supplier")
                         .WithMany("ProductSuppliers")
                         .HasForeignKey("SupplierId")
                         .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .IsRequired()
+                        .HasConstraintName("FK_ProductSupplier_Supplier");
 
                     b.Navigation("Product");
 

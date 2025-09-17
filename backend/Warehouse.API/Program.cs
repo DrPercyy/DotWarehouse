@@ -8,6 +8,7 @@ using Warehouse.Infra.Inventory.Repositories;
 using Warehouse.Infra.Inventory.Services;
 using Warehouse.Infra.Inventory.Services.Interfaces;
 using Warehouse.API.Middleware;
+using Warehouse.Core.Inventory.Interfaces.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,8 +33,9 @@ builder.Services.AddControllers();
 
 // Aqui você poderia registrar serviços do módulo Inventory
 
-builder.Services.AddScoped<IProductRepository, ProductRepository>();
-builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddInfrastructure(builder.Configuration);
+
+    
 
 var app = builder.Build();
 

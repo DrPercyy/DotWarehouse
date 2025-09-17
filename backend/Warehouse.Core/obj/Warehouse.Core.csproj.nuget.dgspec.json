@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/Warehouse.Core.csproj": {}
+    "C:\\Users\\Totalseg01\\Documents\\Projetos\\DotWarehouse\\backend\\Warehouse.Core\\Warehouse.Core.csproj": {}
   },
   "projects": {
-    "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/Warehouse.Core.csproj": {
+    "C:\\Users\\Totalseg01\\Documents\\Projetos\\DotWarehouse\\backend\\Warehouse.Core\\Warehouse.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/Warehouse.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Totalseg01\\Documents\\Projetos\\DotWarehouse\\backend\\Warehouse.Core\\Warehouse.Core.csproj",
         "projectName": "Warehouse.Core",
-        "projectPath": "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/Warehouse.Core.csproj",
-        "packagesPath": "/home/jlima/.nuget/packages/",
-        "outputPath": "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/obj/",
+        "projectPath": "C:\\Users\\Totalseg01\\Documents\\Projetos\\DotWarehouse\\backend\\Warehouse.Core\\Warehouse.Core.csproj",
+        "packagesPath": "C:\\Users\\Totalseg01\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Totalseg01\\Documents\\Projetos\\DotWarehouse\\backend\\Warehouse.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/jlima/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Totalseg01\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -36,8 +36,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        }
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -53,12 +54,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/jlima/.dotnet/sdk/8.0.413/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

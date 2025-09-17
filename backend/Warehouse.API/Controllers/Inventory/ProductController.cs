@@ -1,5 +1,3 @@
-//file: backend/Warehouse.API/Controllers/Inventory/ProductController.cs
-
 using Microsoft.AspNetCore.Mvc;
 using Warehouse.API.Filters;
 using Warehouse.Core.Entities;
@@ -20,7 +18,7 @@ namespace Warehouse.API.Controllers.Inventory
             _productService = productService;
         }
 
-        // GET: inventory/product/{id}
+        // GET: inventory/product/{id} - Busca produto por ID
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -31,9 +29,9 @@ namespace Warehouse.API.Controllers.Inventory
             return Ok(product);
         }
 
-        // GET: inventory/product
+        // GET: inventory/products - Lista todos os produtos (mudei pra plural pra clareza)
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAllProducts()
         {
             var products = await _productService.GetAllAsync();
             if (products == null || !products.Any())
@@ -42,9 +40,9 @@ namespace Warehouse.API.Controllers.Inventory
             return Ok(products);
         }
 
-        // POST: inventory/product
+        // POST: inventory/product - Cria um novo produto
         [HttpPost]
-        public async Task<IActionResult> Add([FromBody] Product product)
+        public async Task<IActionResult> CreateProduct([FromBody] Product product)
         {
             if (product == null)
                 throw new ValidationException("Produto não pode ser nulo.");
@@ -52,13 +50,19 @@ namespace Warehouse.API.Controllers.Inventory
             if (string.IsNullOrWhiteSpace(product.Name))
                 throw new ValidationException("O nome do produto é obrigatório.");
 
+            if (product.UnitId <= 0)
+                throw new ValidationException("ID da unidade é obrigatório e deve ser válido.");
+
+            if (product.CategoryId <= 0)
+                throw new ValidationException("ID da categoria é obrigatório e deve ser válido.");
+
             await _productService.AddAsync(product);
             return CreatedAtAction(nameof(GetById), new { id = product.Id }, product);
         }
 
-        // PUT: inventory/product/{id}
+        // PUT: inventory/product/{id} - Atualiza produto por ID
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] Product product)
+        public async Task<IActionResult> UpdateProduct(int id, [FromBody] Product product)
         {
             if (product == null)
                 throw new ValidationException("Produto não pode ser nulo.");
@@ -74,9 +78,9 @@ namespace Warehouse.API.Controllers.Inventory
             return NoContent();
         }
 
-        // DELETE: inventory/product/{id}
+        // DELETE: inventory/product/{id} - Deleta produto por ID
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> DeleteProduct(int id)
         {
             var existing = await _productService.GetByIdAsync(id);
             if (existing == null)
@@ -86,9 +90,9 @@ namespace Warehouse.API.Controllers.Inventory
             return NoContent();
         }
 
-        // GET: inventory/product/by-category/{categoryId}
-        [HttpGet("by-category/{categoryId}")]
-        public async Task<IActionResult> GetByCategory(int categoryId)
+        // GET: inventory/products/by-category/{categoryId} - Busca produtos por categoria
+        [HttpGet("products/by-category/{categoryId}")]
+        public async Task<IActionResult> GetProductsByCategory(int categoryId)
         {
             var products = await _productService.GetProductsByCategoryIdAsync(categoryId);
             if (products == null || !products.Any())
@@ -97,9 +101,9 @@ namespace Warehouse.API.Controllers.Inventory
             return Ok(products);
         }
 
-        // GET: inventory/product/search?term=xyz
-        [HttpGet("search")]
-        public async Task<IActionResult> Search([FromQuery] string term)
+        // GET: inventory/products/search?term=xyz - Busca produtos por termo
+        [HttpGet("products/search")]
+        public async Task<IActionResult> SearchProducts([FromQuery] string term)
         {
             if (string.IsNullOrWhiteSpace(term))
                 throw new ValidationException("O termo de busca não pode ser vazio.");
@@ -111,9 +115,9 @@ namespace Warehouse.API.Controllers.Inventory
             return Ok(products);
         }
 
-        // GET: inventory/product/{id}/movements
+        // GET: inventory/product/{id}/movements - Busca movimentações de um produto
         [HttpGet("{id}/movements")]
-        public async Task<IActionResult> GetMovements(int id)
+        public async Task<IActionResult> GetProductMovements(int id)
         {
             var product = await _productService.GetByIdAsync(id);
             if (product == null)

@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Warehouse.Infra.Data;
+using Warehouse.Infra.Inventory.DependencyInjection;
+using Warehouse.Infra.Inventory.Repositories;
 
 namespace Warehouse.Infra
 {
@@ -18,10 +20,8 @@ namespace Warehouse.Infra
                     new MySqlServerVersion(new Version(8, 0, 33)) // versão do MySQL
                 )
             );
-
-            // Aqui você pode registrar outros serviços de Infra
-            // services.AddScoped<IUnitRepository, UnitRepository>();
-            // services.AddScoped<ICategoryRepository, CategoryRepository>();
+            //Registra os serviços dos módulos.
+            services.AddInventoryServices();
 
             return services;
         }

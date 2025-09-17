@@ -21,3 +21,15 @@
 /run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/bin/Debug/net8.0/Warehouse.Core.dll
 /run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/bin/Debug/net8.0/Warehouse.Core.pdb
 /run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Core/obj/Debug/net8.0/ref/Warehouse.Core.dll
+C:\Users\Totalseg01\Documents\Projetos\DotWarehouse\backend\Warehouse.Core\bin\Debug\net8.0\Warehouse.Core.deps.json
+C:\Users\Totalseg01\Documents\Projetos\DotWarehouse\backend\Warehouse.Core\bin\Debug\net8.0\Warehouse.Core.dll
+C:\Users\Totalseg01\Documents\Projetos\DotWarehouse\backend\Warehouse.Core\bin\Debug\net8.0\Warehouse.Core.pdb
+C:\Users\Totalseg01\Documents\Projetos\DotWarehouse\backend\Warehouse.Core\obj\Debug\net8.0\Warehouse.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Totalseg01\Documents\Projetos\DotWarehouse\backend\Warehouse.Core\obj\Debug\net8.0\Warehouse.Core.AssemblyInfoInputs.cache
+C:\Users\Totalseg01\Documents\Projetos\DotWarehouse\backend\Warehouse.Core\obj\Debug\net8.0\Warehouse.Core.AssemblyInfo.cs
+C:\Users\Totalseg01\Documents\Projetos\DotWarehouse\backend\Warehouse.Core\obj\Debug\net8.0\Warehouse.Core.csproj.CoreCompileInputs.cache
+C:\Users\Totalseg01\Documents\Projetos\DotWarehouse\backend\Warehouse.Core\obj\Debug\net8.0\Warehouse.Core.sourcelink.json
+C:\Users\Totalseg01\Documents\Projetos\DotWarehouse\backend\Warehouse.Core\obj\Debug\net8.0\Warehouse.Core.dll
+C:\Users\Totalseg01\Documents\Projetos\DotWarehouse\backend\Warehouse.Core\obj\Debug\net8.0\refint\Warehouse.Core.dll
+C:\Users\Totalseg01\Documents\Projetos\DotWarehouse\backend\Warehouse.Core\obj\Debug\net8.0\Warehouse.Core.pdb
+C:\Users\Totalseg01\Documents\Projetos\DotWarehouse\backend\Warehouse.Core\obj\Debug\net8.0\ref\Warehouse.Core.dll

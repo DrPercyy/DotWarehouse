@@ -4555,19 +4555,19 @@
     ]
   },
   "packageFolders": {
-    "/home/jlima/.nuget/packages/": {}
+    "C:\\Users\\Totalseg01\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.API/Warehouse.API.csproj",
+      "projectUniqueName": "C:\\Users\\Totalseg01\\Documents\\Projetos\\DotWarehouse\\backend\\Warehouse.API\\Warehouse.API.csproj",
       "projectName": "Warehouse.API",
-      "projectPath": "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.API/Warehouse.API.csproj",
-      "packagesPath": "/home/jlima/.nuget/packages/",
-      "outputPath": "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.API/obj/",
+      "projectPath": "C:\\Users\\Totalseg01\\Documents\\Projetos\\DotWarehouse\\backend\\Warehouse.API\\Warehouse.API.csproj",
+      "packagesPath": "C:\\Users\\Totalseg01\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Totalseg01\\Documents\\Projetos\\DotWarehouse\\backend\\Warehouse.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/jlima/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Totalseg01\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -4579,8 +4579,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Infra/Warehouse.Infra.csproj": {
-              "projectPath": "/run/midia/jlima/Dados/Projetos/DotWarehouse/backend/Warehouse.Infra/Warehouse.Infra.csproj"
+            "C:\\Users\\Totalseg01\\Documents\\Projetos\\DotWarehouse\\backend\\Warehouse.Infra\\Warehouse.Infra.csproj": {
+              "projectPath": "C:\\Users\\Totalseg01\\Documents\\Projetos\\DotWarehouse\\backend\\Warehouse.Infra\\Warehouse.Infra.csproj"
             }
           }
         }
@@ -4593,8 +4593,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
-      }
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -4638,6 +4639,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[8.0.11, 8.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -4646,7 +4665,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/jlima/.dotnet/sdk/8.0.413/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

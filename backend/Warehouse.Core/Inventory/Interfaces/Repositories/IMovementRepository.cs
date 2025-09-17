@@ -1,9 +1,16 @@
-//file: backend/Warehouse.Core/Inventory/Interfaces/Repositories/IMovementRepository.cs
-
-using Warehouse.Core.Interfaces;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using Warehouse.Core.Entities;
 
-public interface IMovementRepository : IBaseRepository<Movement>
+namespace Warehouse.Core.Inventory.Interfaces.Repositories
 {
-    Task<Movement> GetByNameAsync(string name);
+    public interface IMovementRepository
+    {
+        Task<Movement> GetByIdAsync(int id);
+        Task<IEnumerable<Movement>> GetAllAsync();
+        Task AddAsync(Movement movement);
+        Task UpdateAsync(Movement movement);
+        Task DeleteAsync(int id);
+        Task<IEnumerable<Movement>> GetProductMovementsAsync(int productId);
+    }
 }

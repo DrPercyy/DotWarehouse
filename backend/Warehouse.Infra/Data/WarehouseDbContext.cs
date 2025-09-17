@@ -1,5 +1,3 @@
-//file: backend/Warehouse.Infra/Data/WarehouseDbContext.cs
-
 using Microsoft.EntityFrameworkCore;
 using Warehouse.Core.Entities;
 
@@ -32,39 +30,50 @@ namespace Warehouse.Infra.Data
             modelBuilder.Entity<Supplier>().ToTable("suppliers");
             modelBuilder.Entity<ProductSupplier>().ToTable("products_suppliers");
 
-            // Primary key for ProductSupplier
-            modelBuilder.Entity<ProductSupplier>()
-                .HasKey(ps => ps.Id);
+            // Primary keys
+            modelBuilder.Entity<Unit>().HasKey(u => u.Id);
+            modelBuilder.Entity<Category>().HasKey(c => c.Id);
+            modelBuilder.Entity<Product>().HasKey(p => p.Id);
+            modelBuilder.Entity<Movement>().HasKey(m => m.Id);
+            modelBuilder.Entity<Supplier>().HasKey(s => s.Id);
+            modelBuilder.Entity<ProductSupplier>().HasKey(ps => ps.Id);
 
             // Relationships
             modelBuilder.Entity<Product>()
                 .HasOne(p => p.Unit)
-                .WithMany()
+                .WithMany(u => u.Products) // Alinhado com Unit.cs
                 .HasForeignKey(p => p.UnitId)
-                .OnDelete(DeleteBehavior.Restrict);
+                .HasConstraintName("FK_Product_Unit")
+                .OnDelete(DeleteBehavior.Restrict)
+                .IsRequired(); // UnitId é obrigatório
 
             modelBuilder.Entity<Product>()
                 .HasOne(p => p.Category)
-                .WithMany()
+                .WithMany(c => c.Products) // Alinhado com Category.cs
                 .HasForeignKey(p => p.CategoryId)
-                .OnDelete(DeleteBehavior.Restrict);
+                .HasConstraintName("FK_Product_Category")
+                .OnDelete(DeleteBehavior.Restrict)
+                .IsRequired(); // CategoryId é obrigatório
 
             modelBuilder.Entity<Movement>()
                 .HasOne(m => m.Product)
                 .WithMany(p => p.Movements)
                 .HasForeignKey(m => m.ProductId)
+                .HasConstraintName("FK_Movement_Product")
                 .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<ProductSupplier>()
                 .HasOne(ps => ps.Product)
                 .WithMany(p => p.ProductSuppliers)
                 .HasForeignKey(ps => ps.ProductId)
+                .HasConstraintName("FK_ProductSupplier_Product")
                 .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<ProductSupplier>()
                 .HasOne(ps => ps.Supplier)
                 .WithMany(s => s.ProductSuppliers)
                 .HasForeignKey(ps => ps.SupplierId)
+                .HasConstraintName("FK_ProductSupplier_Supplier")
                 .OnDelete(DeleteBehavior.Cascade);
         }
     }
